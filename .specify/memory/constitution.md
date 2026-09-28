@@ -1,50 +1,41 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report
+Version change: 0.0.0 -> 1.0.0
+Modified principles: none; new constitution initialized from the resolved scaffold
+Added sections: Core Principles, Project Standards, Development Workflow, Governance
+Removed sections: none
+Follow-up TODOs: none
+-->
+
+# Spec Kit Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Requirements Before Code
+Every feature, fix, and improvement in this repository must begin with a clear user need, scope boundary, and acceptance condition. Work without a documented problem statement or measurable outcome is not considered valid for planning or implementation.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Evidence-Driven Delivery
+Changes must be validated with observable evidence before they are considered complete. Tests, specification checks, and reviewable artifacts are required to confirm that a result satisfies the stated need and preserves the integrity of the repository.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Small, Reviewable Changes
+Work must be kept to the smallest coherent unit that delivers value. Larger efforts are broken into reviewable increments that can be independently validated, understood, and reverted without creating hidden dependencies.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Documentation and Clarity
+This project preserves intent through versioned documentation and explicit artifacts. Specifications, plans, and task records must remain understandable to contributors and reviewers without relying on undocumented assumptions or tribal knowledge.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Respect for Governance and Collaboration
+The repository operates through explicit ownership, clear review paths, and sustainable working practices. Contributors must respect the stored process, avoid unnecessary disruption, and ensure changes remain maintainable, accessible, and aligned with the approved project direction.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Project Standards
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+This repository is a template and governance framework for structured feature work. It must remain usable for teams that need to define, plan, implement, and verify work without relying on undocumented conventions. Generated artifacts must stay explicit, reviewable, and aligned with the current constitution.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## Development Workflow
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+All work follows the Spec Kit lifecycle: define the need, clarify unresolved decisions, plan the implementation, execute the tasks, and validate the result before completion. A change is complete only when the relevant specification, planning artifacts, implementation, and verification evidence match the approved project intent.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution supersedes informal local practices for how work is specified and delivered in this repository. Amendments require a clear rationale, a version bump, and a review of compatibility with existing workflows. Non-governance work is deferred to the appropriate Spec Kit command flow instead of being mixed into this document.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2026-09-28 | **Last Amended**: 2026-09-28
